@@ -15,5 +15,21 @@ RSpec.describe Post, type: :model do
     it 'ALL validations should return true' do
       expect(@new_post).to be_valid
     end
+
+    it 'ALL validations should return true' do
+      expect(@new_post.title).to eql('Hello')
+    end
+
+    it 'ALL validations should return true' do
+      expect(@new_post.title).to satisfy { |n| n.length <= 250 }
+    end
+
+    it 'ALL validations should return true' do
+      expect(@new_post.comments_counter).to satisfy { |n| n >= 0 }
+    end
+
+    it 'ALL validations should return true' do
+      expect(@new_post.likes_counter).to satisfy { |n| n >= 0 }
+    end
   end
 end
