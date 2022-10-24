@@ -11,6 +11,25 @@
   </head>
 
   <body>
+    <header class="header-container">
+      <div>
+        MyLogo
+      </div>
+      <ul>
+        <li>
+          <a href="/">users index</a>
+        </li>
+        <li>
+          <a href="/users/show">users show</a>
+        </li>
+        <li>
+          <a href="/users/show/posts/">posts index</a>
+        </li>
+        <li>
+          <a href="/users/show/posts/show">posts show</a>
+        </li>
+      </ul>
+    </header>
     <%= yield %>
   </body>
 </html>
