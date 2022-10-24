@@ -14,26 +14,26 @@
  *= require_self
  */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .header-container {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 25px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
 }
 
 .header-container ul {
-    display: flex;
-    list-style-type: none;
-    gap: 25px;
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
 }
 
 .header-container ul a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
