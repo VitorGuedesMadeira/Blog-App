@@ -1,8 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
-
-
   describe 'GET /index' do
     before(:each) do
       get '/users/:user_id/posts'
@@ -17,7 +15,7 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'should return correct placeholder' do
-      expect(response.body).to include("Here is a list of ALL posts from a single user")
+      expect(response.body).to include('Here is a list of ALL posts from a single user')
     end
   end
 
@@ -37,7 +35,7 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'should return correct placeholder' do
-      expect(response.body).to include("Here is a SINGLE post for a given user")
+      expect(response.body).to include('Here is a SINGLE post for a given user')
     end
   end
 end
