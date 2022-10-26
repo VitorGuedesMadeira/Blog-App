@@ -1,5 +1,5 @@
 .single-post-container {
-  background-color: lightcyan;
+  background-color: var(--color-background-5);
   min-height: calc(100vh - 71px);
   padding: 50px;
   display: flex;

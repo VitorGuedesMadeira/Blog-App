@@ -23,7 +23,7 @@
         </p>
       </div>
 
-      <% @user.posts.each do |post| %>
+      <% @user.last_three_posts.each do |post| %>
         <div class="single-user-single-post">
           <h3>Post <%= post.id %></h3>
           <p><%= post.text %></p>

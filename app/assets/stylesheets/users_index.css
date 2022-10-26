@@ -1,11 +1,6 @@
-* {
-  text-decoration: none;
-  color: black;
-}
-
 .users-container {
-  background-color: lightcyan;
-  min-height: calc(100vh - 71px);
+  background-color: var(--color-background-5);
+  min-height: 100vh;
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -19,6 +14,7 @@
 
 .single-user-image {
   border: 5px solid black;
+  border-radius: 15px;
   overflow: hidden;
   min-height: 200px;
   min-width: 200px;
@@ -35,6 +31,7 @@
 
 .single-user-info {
   border: 5px solid black;
+  border-radius: 15px;
   background-color: green;
   width: 100%;
   padding: 50px;

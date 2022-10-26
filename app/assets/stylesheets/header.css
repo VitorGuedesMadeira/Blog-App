@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
+  text-decoration: none;
+  color: black;
 }
 
 .header-container {
-  background-color: black;
-  color: white;
+  background-color: var(--color-background-1);
+  background-image: url(../images/texture.png);
   display: flex;
   justify-content: space-between;
   padding: 25px 50px;

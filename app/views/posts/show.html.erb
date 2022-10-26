@@ -8,11 +8,13 @@
         <span>Likes: <%= @post.likes_counter %></span>
       </div>
       <div class="single-user-single-post-comments">
-        <% @post.comments.each do |comment| %>
-          <h3><%= comment.user.name %>: </h3>
-          <p><%= comment.text %></p>
-        <% end %>
-      </div>
+          <% @post.comments.each do |comment| %>
+            <div class="single-user-single-post-single-comment">
+              <p><strong><%= comment.user.name %>:</strong></p>
+              <p><%= comment.text %></p>
+            </div>
+          <% end %>
+        </div>
     </div>
   </section>
 </main>

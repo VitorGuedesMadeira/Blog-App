@@ -1,5 +1,5 @@
 .single-user-container {
-  background-color: lightcyan;
+  background-color: var(--color-background-5);
   min-height: calc(100vh - 71px);
   padding: 50px;
   display: flex;
@@ -9,6 +9,7 @@
 
 .single-user-bio {
   border: 5px solid black;
+  border-radius: 15px;
   padding: 25px;
   background-color: olive;
 }
@@ -19,6 +20,7 @@
 
 .single-user-single-post {
   border: 5px solid black;
+  border-radius: 15px;
   padding: 25px;
   background-color: darkslateblue;
 }
@@ -29,6 +31,7 @@
 
 .see-all-posts-button {
   border: 5px solid black;
+  border-radius: 15px;
   padding: 25px;
   font-weight: 900;
   font-size: 1.5em;
