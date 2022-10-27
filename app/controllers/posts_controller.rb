@@ -13,16 +13,14 @@ class PostsController < ApplicationController
   end
 
   def create
-    @user = current_user
     @post = Post.new(post_params)
-    @post.user = @user
+    @post.user = current_user
 
     if @post.save
-      redirect_to user_path(@user.id)
+      redirect_to user_path(current_user.id)
     else
       render :new
     end
-
   end
 
   private

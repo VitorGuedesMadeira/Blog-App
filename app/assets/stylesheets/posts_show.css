@@ -5,5 +5,45 @@
   padding: 50px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+}
+
+.single-user-single-post {
+  position: relative;
+}
+
+.create-comment-form {
+  display: flex;
+  gap: 10px;
+  padding-top: 50px;
+}
+
+.create-comment-text {
+  border: 5px solid black;
+  border-radius: 15px;
+  display: flex;
+  padding: 15px;
+}
+
+.create-comment-button {
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.create-comment-button:hover {
+  background-color: grey;
+}
+
+.likes-form {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 15px;
+  font-weight: 900;
+}
+
+.likes-form:hover {
+  background-color: #ff000075;
 }
