@@ -11,10 +11,10 @@
 
 .header-container {
   background-color: var(--color-background-1);
-  background-image: url(../images/texture.png);
   display: flex;
   justify-content: space-between;
   padding: 25px 50px;
+  box-shadow: var(--box-shadow);
 }
 
 .header-container span {

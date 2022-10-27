@@ -1,5 +1,6 @@
 .single-post-container {
   background-color: var(--color-background-5);
+  background-image: url(texture.png);
   min-height: calc(100vh - 71px);
   padding: 50px;
   display: flex;

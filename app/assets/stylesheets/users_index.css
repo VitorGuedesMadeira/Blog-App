@@ -1,5 +1,6 @@
 .users-container {
   background-color: var(--color-background-5);
+  background-image: url(texture.png);
   min-height: 100vh;
   padding: 50px;
   display: flex;
@@ -18,6 +19,7 @@
   overflow: hidden;
   min-height: 200px;
   min-width: 200px;
+  box-shadow: var(--box-shadow);
 }
 
 .single-user-image img {
@@ -32,7 +34,8 @@
 .single-user-info {
   border: 5px solid black;
   border-radius: 15px;
-  background-color: green;
+  background-color: var(--color-background-3);
+  box-shadow: var(--box-shadow);
   width: 100%;
   padding: 50px;
   display: flex;

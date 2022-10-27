@@ -1,5 +1,6 @@
 .single-user-container {
   background-color: var(--color-background-5);
+  background-image: url(texture.png);
   min-height: calc(100vh - 71px);
   padding: 50px;
   display: flex;
@@ -11,7 +12,8 @@
   border: 5px solid black;
   border-radius: 15px;
   padding: 25px;
-  background-color: olive;
+  background-color: var(--color-background-3);
+  box-shadow: var(--box-shadow);
 }
 
 .single-user-bio:hover {
@@ -22,11 +24,17 @@
   border: 5px solid black;
   border-radius: 15px;
   padding: 25px;
-  background-color: darkslateblue;
+  background-color: var(--color-background-1);
+  box-shadow: var(--box-shadow);
 }
 
 .single-user-single-post:hover {
   background-color: grey;
+}
+
+.buttons {
+  display: flex;
+  gap: 25px;
 }
 
 .see-all-posts-button {
@@ -36,6 +44,7 @@
   font-weight: 900;
   font-size: 1.5em;
   cursor: pointer;
+  box-shadow: var(--box-shadow);
 }
 
 .see-all-posts-button:hover {

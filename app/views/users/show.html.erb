@@ -24,17 +24,26 @@
       </div>
 
       <% @user.last_three_posts.each do |post| %>
-        <div class="single-user-single-post">
-          <h3>Post <%= post.id %></h3>
-          <p><%= post.text %></p>
-          <span>Comments: <%= post.comments_counter %></span>
-          <span>Likes: <%= post.likes_counter %></span>
-        </div>
+        <%= link_to user_post_path(@user, post) do %>
+          <div class="single-user-single-post">
+            <h3>Post <%= post.id %></h3>
+            <p><strong> <%= post.title %> </strong></p>
+            <p><%= post.text %></p>
+            <span>Comments: <%= post.comments_counter %></span>
+            <span>Likes: <%= post.likes_counter %></span>
+          </div>
+        <% end %>
       <% end %>
 
-      <%= link_to user_posts_path(@user) do %>
-        <button type="button" class="see-all-posts-button">See all posts</button>
-      <% end %>
+      <div class="buttons">
+        <%= link_to user_posts_path(@user) do %>
+          <button type="button" class="see-all-posts-button">See all posts</button>
+        <% end %>
+
+        <%= link_to new_user_post_path(@user) do %>
+          <button type="button" class="see-all-posts-button">Create new post</button>
+        <% end %>
+      </div>
 
   </section>
 </main>
