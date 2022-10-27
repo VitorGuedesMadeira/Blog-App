@@ -22,12 +22,14 @@
   border-radius: 15px;
   display: flex;
   padding: 15px;
+  font-weight: 900;
 }
 
 .create-comment-button {
   border: 5px solid black;
   border-radius: 15px;
   padding: 15px;
+  font-weight: 900;
 }
 
 .create-comment-button:hover {
