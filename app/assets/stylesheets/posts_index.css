@@ -6,6 +6,9 @@
   background-color: var(--color-background-2);
   box-shadow: var(--box-shadow);
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .single-user-single-post-comments:hover {

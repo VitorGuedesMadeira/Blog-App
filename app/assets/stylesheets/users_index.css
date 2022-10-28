@@ -1,6 +1,5 @@
 .users-container {
-  background-color: var(--color-background-5);
-  background-image: url(texture.png);
+  background-image: url(texture.png), linear-gradient(to right, var(--color-background-5), rgb(104, 100, 73));
   min-height: 100vh;
   padding: 50px;
   display: flex;
@@ -10,11 +9,12 @@
 
 .single-user {
   display: flex;
-  gap: 50px;
 }
 
 .single-user-image {
-  border: 5px solid black;
+  border-top: 5px solid black;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
   border-radius: 15px;
   overflow: hidden;
   min-height: 200px;
@@ -28,13 +28,15 @@
 }
 
 .single-user:hover > * {
-  background-color: lightslategray;
+  background-image: linear-gradient(to right, var(--color-background-1), rgb(33, 27, 118));
 }
 
 .single-user-info {
-  border: 5px solid black;
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
   border-radius: 15px;
-  background-color: var(--color-background-3);
+  background-image: linear-gradient(to right, var(--color-background-3), var(--color-background-1));
   box-shadow: var(--box-shadow);
   width: 100%;
   padding: 50px;

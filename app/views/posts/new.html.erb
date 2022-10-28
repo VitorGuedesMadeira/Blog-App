@@ -1,15 +1,6 @@
-<%= form_with model: Post, url: user_posts_path do |form|  %>
-  <div>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </div>
-
-  <div>
-    <%= form.label :text %><br>
-    <%= form.text_field :text %>
-  </div>
-
-  <div>
-    <%= form.submit "Submit" %><br>
-  </div>
-<% end %>
+<main>
+  <section class="create-new-post-container">
+    <h1>Create new post</h>
+    <%= render "posts/form" %>
+  </section>
+</main>

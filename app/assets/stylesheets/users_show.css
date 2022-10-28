@@ -1,7 +1,7 @@
 .single-user-container {
   background-color: var(--color-background-5);
   background-image: url(texture.png);
-  min-height: calc(100vh - 71px);
+  min-height: calc(100vh - 76px);
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -32,6 +32,15 @@
   background-color: grey;
 }
 
+.single-user-single-post span {
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px;
+  font-weight: 900;
+  box-shadow: var(--box-shadow);
+  border: 1px solid black;
+}
+
 .buttons {
   display: flex;
   gap: 25px;
@@ -45,8 +54,11 @@
   font-size: 1.5em;
   cursor: pointer;
   box-shadow: var(--box-shadow);
+  background-image: linear-gradient(to right, var(--color-background-2), var(--color-background-3));
+  transition: 0.5s;
 }
 
 .see-all-posts-button:hover {
   background-color: grey;
+  transform: scale(1.02);
 }

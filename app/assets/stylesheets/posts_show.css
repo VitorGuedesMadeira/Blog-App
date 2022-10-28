@@ -1,7 +1,7 @@
 .single-post-container {
   background-color: var(--color-background-5);
   background-image: url(texture.png);
-  min-height: calc(100vh - 71px);
+  min-height: calc(100vh - 76px);
   padding: 50px;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,12 @@
 .create-comment-form {
   display: flex;
   gap: 10px;
-  padding-top: 50px;
+  border: 5px solid black;
+  background-color: var(--color-background-1);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 15px;
+  margin-top: 25px;
 }
 
 .create-comment-text {
@@ -23,6 +28,7 @@
   display: flex;
   padding: 15px;
   font-weight: 900;
+  box-shadow: var(--box-shadow);
 }
 
 .create-comment-button {
@@ -30,10 +36,14 @@
   border-radius: 15px;
   padding: 15px;
   font-weight: 900;
+  background-color: var(--color-background-2);
+  box-shadow: var(--box-shadow);
+  transition: 0.5s;
 }
 
 .create-comment-button:hover {
   background-color: grey;
+  transform: scale(1.02);
 }
 
 .likes-form {
@@ -44,8 +54,12 @@
   border-radius: 15px;
   padding: 15px;
   font-weight: 900;
+  background-color: var(--color-background-2);
+  box-shadow: var(--box-shadow);
+  transition: 0.5s;
 }
 
 .likes-form:hover {
   background-color: #ff000075;
+  transform: scale(1.02);
 }

@@ -1,48 +1,15 @@
 <main>
   <section class="single-user-container">
-      <div class="single-user">
-        <div class="single-user-image">
-          <img src="<%= @user.photo %>">
-        </div>
-        <div class="single-user-info">
-          <h2>
-            <%= @user.name %>
-          </h2>
-          <span>
-            Number of posts: <%= @user.posts_counter %>
-          </span>
-        </div>
-      </div>
+      <%= render "users/single_user_info" %>
 
-      <div class="single-user-bio">
-        <h3>
-          Bio
-        </h3>
-        <p>
-          <%= @user.bio %>
-        </p>
-      </div>
+      <%= render "users/single_user_bio" %>
 
-      <% @user.last_three_posts.each do |post| %>
-        <%= link_to user_post_path(@user, post) do %>
-          <div class="single-user-single-post">
-            <h3>Post <%= post.id %></h3>
-            <p><strong> <%= post.title %> </strong></p>
-            <p><%= post.text %></p>
-            <span>Comments: <%= post.comments_counter %></span>
-            <span>Likes: <%= post.likes_counter %></span>
-          </div>
-        <% end %>
-      <% end %>
+      <%= render "posts/post" %>
 
       <div class="buttons">
-        <%= link_to user_posts_path(@user) do %>
-          <button type="button" class="see-all-posts-button">See all posts</button>
-        <% end %>
+        <%= render "users/all_posts_btn" %>
 
-        <%= link_to new_user_post_path(@user) do %>
-          <button type="button" class="see-all-posts-button">Create new post</button>
-        <% end %>
+        <%= render "users/create_new_post" %>
       </div>
 
   </section>
