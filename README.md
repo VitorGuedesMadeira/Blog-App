@@ -56,6 +56,21 @@ $ bundle install
 ```
 $ code .
 ```
+
+### Database
+
+To create your local Database
+```
+$ rails db:create
+```
+```
+$ rails db:migrate
+```
+To populate your Database
+```
+$ rails db:seed
+```
+
 ### Run tests
 
 Run the local server with:
