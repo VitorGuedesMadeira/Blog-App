@@ -1,0 +1,43 @@
+.single-user-container {
+  background-color: var(--color-background-5);
+  min-height: calc(100vh - 71px);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.single-user-bio {
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 25px;
+  background-color: olive;
+}
+
+.single-user-bio:hover {
+  background-color: grey;
+}
+
+.single-user-single-post {
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 25px;
+  background-color: darkslateblue;
+}
+
+.single-user-single-post:hover {
+  background-color: grey;
+}
+
+.see-all-posts-button {
+  border: 5px solid black;
+  border-radius: 15px;
+  padding: 25px;
+  font-weight: 900;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.see-all-posts-button:hover {
+  background-color: grey;
+}

@@ -1,1 +1,40 @@
-<h1>Here is a SINGLE user</h1>
+<main>
+  <section class="single-user-container">
+      <div class="single-user">
+        <div class="single-user-image">
+          <img src="<%= @user.photo %>">
+        </div>
+        <div class="single-user-info">
+          <h2>
+            <%= @user.name %>
+          </h2>
+          <span>
+            Number of posts: <%= @user.posts_counter %>
+          </span>
+        </div>
+      </div>
+
+      <div class="single-user-bio">
+        <h3>
+          Bio
+        </h3>
+        <p>
+          <%= @user.bio %>
+        </p>
+      </div>
+
+      <% @user.last_three_posts.each do |post| %>
+        <div class="single-user-single-post">
+          <h3>Post <%= post.id %></h3>
+          <p><%= post.text %></p>
+          <span>Comments: <%= post.comments_counter %></span>
+          <span>Likes: <%= post.likes_counter %></span>
+        </div>
+      <% end %>
+
+      <%= link_to user_posts_path(@user) do %>
+        <button type="button" class="see-all-posts-button">See all posts</button>
+      <% end %>
+
+  </section>
+</main>

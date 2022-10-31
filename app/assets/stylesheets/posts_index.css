@@ -1,0 +1,18 @@
+.single-user-single-post-comments {
+  border-bottom: 5px solid black;
+  border-right: 5px solid black;
+  border-left: 5px solid black;
+  padding: 25px;
+  background-color: cadetblue;
+  border-radius: 15px;
+}
+
+.single-user-single-post-comments:hover {
+  background-color: grey;
+}
+
+.single-user-single-post-single-comment {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}

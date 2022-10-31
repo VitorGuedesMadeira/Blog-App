@@ -13,27 +13,12 @@
  *= require_tree .
  *= require_self
  */
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 
-.header-container {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 25px;
-}
-
-.header-container ul {
-  display: flex;
-  list-style-type: none;
-  gap: 25px;
-}
-
-.header-container ul a {
-  text-decoration: none;
-  color: white;
+:root {
+  /* colors */
+  --color-background-1: #3d5599;
+  --color-background-2: #bdceff;
+  --color-background-3: #93a9e6;
+  --color-background-4: #9e7d29;
+  --color-background-5: #e6ce93;
 }

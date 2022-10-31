@@ -12,21 +12,14 @@
 
   <body>
     <header class="header-container">
-      <div>
+      <span>
         MyLogo
-      </div>
+      </span>
       <ul>
         <li>
-          <a href="/">users index</a>
-        </li>
-        <li>
-          <a href="/users/show">users show</a>
-        </li>
-        <li>
-          <a href="/users/show/posts/">posts index</a>
-        </li>
-        <li>
-          <a href="/users/show/posts/show">posts show</a>
+          <%= link_to root_path do %>
+            HOME
+          <% end %>
         </li>
       </ul>
     </header>

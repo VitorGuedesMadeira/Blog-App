@@ -1,0 +1,50 @@
+.users-container {
+  background-color: var(--color-background-5);
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.single-user {
+  display: flex;
+  gap: 50px;
+}
+
+.single-user-image {
+  border: 5px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.single-user-image img {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.single-user:hover > * {
+  background-color: lightslategray;
+}
+
+.single-user-info {
+  border: 5px solid black;
+  border-radius: 15px;
+  background-color: green;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.single-user-info h2 {
+  font-size: 3em;
+  text-decoration: none;
+}
+
+.single-user-info span {
+  font-size: 2em;
+}
