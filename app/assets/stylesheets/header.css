@@ -6,19 +6,30 @@
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
   text-decoration: none;
+}
+
+.link {
   color: black;
 }
 
 .header-container {
-  background-color: var(--color-background-1);
-  background-image: url(../images/texture.png);
+  background-image: linear-gradient(to right, #000322, var(--color-background-1));
   display: flex;
   justify-content: space-between;
   padding: 25px 50px;
+  box-shadow: var(--box-shadow);
+  border-bottom: 2px solid black;
+  font-weight: 900;
 }
 
 .header-container span {
   color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.header-container span:hover {
+  transform: scale(1.02);
 }
 
 .header-container ul {

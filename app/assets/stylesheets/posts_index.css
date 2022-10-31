@@ -1,14 +1,18 @@
 .single-user-single-post-comments {
-  border-bottom: 5px solid black;
-  border-right: 5px solid black;
-  border-left: 5px solid black;
+  border-bottom: 2px solid var(--color-border-1);
+  border-right: 2px solid var(--color-border-1);
+  border-left: 2px solid var(--color-border-1);
   padding: 25px;
-  background-color: cadetblue;
+  background-color: var(--color-background-2);
+  box-shadow: var(--box-shadow);
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .single-user-single-post-comments:hover {
-  background-color: grey;
+  background-color: var(--color-hover-2);
 }
 
 .single-user-single-post-single-comment {

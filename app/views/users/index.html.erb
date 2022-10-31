@@ -1,17 +1,5 @@
 <main>
   <section class="users-container">
-    <% @users_all.each do |user| %>
-      <%= link_to user_path(user) do %>
-        <div class="single-user">
-          <div class="single-user-image">
-            <img src="<%= user.photo %>">
-          </div>
-          <div class="single-user-info">
-            <h2><%= user.name %></h2>
-            <span>Number of posts: <%= user.posts_counter %></span>
-          </div>
-        </div>
-      <% end %>
-    <% end %>
+    <%= render "posts/recent_posts" %>
   </section>
 </main>

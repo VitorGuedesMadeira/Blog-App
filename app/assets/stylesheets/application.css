@@ -20,5 +20,18 @@
   --color-background-2: #bdceff;
   --color-background-3: #93a9e6;
   --color-background-4: #9e7d29;
-  --color-background-5: #e6ce93;
+  --color-background-5: #ded6c6;
+
+  /* hover colors */
+  --color-hover-1: #263a71;
+  --color-hover-2: #8597ca;
+  --color-hover-3: #5d72ab;
+  --color-hover-4: #6d5415;
+  --color-hover-5: #a39883;
+
+  /* border color */
+  --color-border-1: #0d1938;
+
+  /* shadow */
+  --box-shadow: 10px 10px 10px #00000070;
 }
