@@ -1,9 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'Posts', type: :request do
-  describe 'GET /index' do
-  end
-
   describe 'GET /show' do
     it 'returns http success' do
       get users_path(1)
