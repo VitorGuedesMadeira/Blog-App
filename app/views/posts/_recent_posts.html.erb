@@ -1,5 +1,5 @@
 <% @users_all.each do |user| %>
-  <%= link_to user_path(user) do %>
+  <%= link_to user_path(user), class: "link" do %>
     <div class="single-user">
       <div class="single-user-image">
         <img src="<%= user.photo %>">

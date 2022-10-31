@@ -10,7 +10,7 @@ class Post < ApplicationRecord
                                                comparison: { greater_than_or_equal_to: 0 }
 
   def last_five_posts
-    comments.last(5)
+    comments.includes([:user]).last(5)
   end
 
   private

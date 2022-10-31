@@ -1,10 +1,10 @@
 .users-container {
-  background-image: url(texture.png), linear-gradient(to right, var(--color-background-5), rgb(104, 100, 73));
+  background-image: url(texture.png), linear-gradient(to right, var(--color-background-5), rgb(136, 131, 93));
   min-height: 100vh;
-  padding: 50px;
+  padding: 25px 150px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 35px;
 }
 
 .single-user {
@@ -12,9 +12,9 @@
 }
 
 .single-user-image {
-  border-top: 5px solid black;
-  border-left: 5px solid black;
-  border-bottom: 5px solid black;
+  border-top: 2px solid var(--color-border-1);
+  border-left: 2px solid var(--color-border-1);
+  border-bottom: 2px solid var(--color-border-1);
   border-radius: 15px;
   overflow: hidden;
   min-height: 200px;
@@ -32,9 +32,9 @@
 }
 
 .single-user-info {
-  border-top: 5px solid black;
-  border-right: 5px solid black;
-  border-bottom: 5px solid black;
+  border-top: 2px solid var(--color-border-1);
+  border-right: 2px solid var(--color-border-1);
+  border-bottom: 2px solid var(--color-border-1);
   border-radius: 15px;
   background-image: linear-gradient(to right, var(--color-background-3), var(--color-background-1));
   box-shadow: var(--box-shadow);

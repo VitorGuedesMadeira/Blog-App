@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
   text-decoration: none;
+}
+
+.link {
   color: black;
 }
 
@@ -15,7 +18,7 @@
   justify-content: space-between;
   padding: 25px 50px;
   box-shadow: var(--box-shadow);
-  border-bottom: 5px solid black;
+  border-bottom: 2px solid black;
   font-weight: 900;
 }
 
