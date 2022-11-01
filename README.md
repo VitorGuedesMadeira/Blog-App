@@ -99,7 +99,7 @@ Kindly modify the files as needed.
 
 ## Author
 
-👤 **Vitor Guedes Madeira**
+👤 **Vitor Guedes Madeira** 🧑🏻‍💻
 - GitHub: [@vitorguedesmadeira](https://github.com/VitorGuedesMadeira)
 - Twitter: [@CDahguedes](https://twitter.com/CDahguedes)
 - LinkedIn: [Vitor Guedes](https://www.linkedin.com/in/vitor-guedes-madeira/)
