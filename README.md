@@ -90,7 +90,12 @@ $ gem install rspec
 To run tests, please run this command
 
 ```
-$ rspec ./spec/#{filename}_spec.rb
+$ rspec ./spec/#{filename}_spec.rb 
+```
+
+To run all tests, please run this command
+```
+or $ spec  
 ```
 
 ### Usage
