@@ -40,7 +40,7 @@ RSpec.describe 'posts/show.html.erb', type: :feature do
     expect(page).to have_content('Vitor')
   end
 
-  it 'shows the comment a user left' do 
+  it 'shows the comment a user left' do
     expect(page).to have_content('This is the 2st comment on the 4th post')
   end
 end

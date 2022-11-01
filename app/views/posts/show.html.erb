@@ -14,7 +14,7 @@
     </div>
     
     <div class="single-user-single-post-comments">
-    <% @post.comments.each do |comment| %>
+    <% @comments.includes([:user]).each do |comment| %>
         <div class="single-user-single-post-single-comment">
         <p><strong><%= comment.user.name %>:</strong></p>
         <p><%= comment.text %></p>

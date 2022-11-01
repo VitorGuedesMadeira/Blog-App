@@ -12,7 +12,7 @@ RSpec.describe 'posts/index.html.erb', type: :feature do
     Comment.create(post: @last_post, user: @user, text: 'This is the 3st comment on the 4th post')
     visit user_posts_path(@user)
   end
-  
+
   it 'shows user name' do
     expect(page).to have_content(@user.name)
   end
