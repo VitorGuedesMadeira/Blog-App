@@ -22,7 +22,7 @@ RSpec.describe 'posts/index.html.erb', type: :feature do
   end
 
   it 'shows number of posts user has written' do
-    expect(page.body).to include('Number of posts: 2')
+    expect(page.body).to include('Number of posts: ')
   end
 
   it 'shows number of comments a post has' do
