@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'User index page', type: :feature do
   describe 'test' do
     before(:each) do
-      @user = User.create(name: 'Vitor',
+      @user = User.create(name: 'Karla',
                           photo: 'https://picsum.photos/200',
                           bio: 'Brazilian pilot')
       visit users_path
@@ -19,6 +19,11 @@ RSpec.describe 'User index page', type: :feature do
 
     it 'shows number of posts user has written' do
       expect(page.body).to include('Number of posts: 0')
+    end
+
+    it 'Redirect to post show page when a post is clicked' do
+      click_link('Karla')
+      expect(current_path).to eq(user_path(@user.id))
     end
   end
 end

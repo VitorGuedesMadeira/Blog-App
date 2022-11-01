@@ -18,7 +18,7 @@
   justify-content: space-between;
   padding: 25px 50px;
   box-shadow: var(--box-shadow);
-  border-bottom: 2px solid black;
+  border-bottom: var(--border-weight-1) solid black;
   font-weight: 900;
 }
 

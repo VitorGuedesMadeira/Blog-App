@@ -19,17 +19,17 @@
 .create-comment-form {
   display: flex;
   gap: 10px;
-  border: 2px solid var(--color-border-1);
+  border: var(--border-weight-1) solid var(--color-border-1);
   background-color: var(--color-background-1);
   width: fit-content;
   padding: 5px;
-  border-radius: 15px;
+  border-radius: var(--border-radius-1);
   margin-top: 25px;
 }
 
 .create-comment-text {
-  border: 2px solid var(--color-border-1);
-  border-radius: 15px;
+  border: var(--border-weight-1) solid var(--color-border-1);
+  border-radius: var(--border-radius-1);
   display: flex;
   padding: 15px;
   font-weight: 900;
@@ -37,8 +37,8 @@
 }
 
 .create-comment-button {
-  border: 2px solid var(--color-border-1);
-  border-radius: 15px;
+  border: var(--border-weight-1) solid var(--color-border-1);
+  border-radius: var(--border-radius-1);
   padding: 15px;
   font-weight: 900;
   background-color: var(--color-background-2);
@@ -55,8 +55,8 @@
   position: absolute;
   right: 15px;
   bottom: 15px;
-  border: 2px solid var(--color-border-1);
-  border-radius: 15px;
+  border: var(--border-weight-1) solid var(--color-border-1);
+  border-radius: var(--border-radius-1);
   padding: 15px;
   font-weight: 900;
   background-color: var(--color-background-2);
