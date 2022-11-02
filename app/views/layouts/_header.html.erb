@@ -1,6 +1,15 @@
 <header class="header-container">
   <span>Application Blog</span>
   <ul>
+    <% if user_signed_in? %>
+    <li>
+      Hello
+      <%= current_user.name.split(' ')[0] %>
+    </li>
+    <% end %>
+    <li>
+      <%= button_to "Logout", destroy_user_session_path, method: :delete %>
+    </li>
     <li>
       <%= link_to root_path do %>
         Home
