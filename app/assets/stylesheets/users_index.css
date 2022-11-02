@@ -9,13 +9,14 @@
 
 .single-user {
   display: flex;
+  animation: rightAnimation 2s;
 }
 
 .single-user-image {
-  border-top: 2px solid var(--color-border-1);
-  border-left: 2px solid var(--color-border-1);
-  border-bottom: 2px solid var(--color-border-1);
-  border-radius: 15px;
+  border-top: var(--border-weight-1) solid var(--color-border-1);
+  border-left: var(--border-weight-1) solid var(--color-border-1);
+  border-bottom: var(--border-weight-1) solid var(--color-border-1);
+  border-radius: var(--border-radius-1);
   overflow: hidden;
   min-height: 200px;
   min-width: 200px;
@@ -32,10 +33,10 @@
 }
 
 .single-user-info {
-  border-top: 2px solid var(--color-border-1);
-  border-right: 2px solid var(--color-border-1);
-  border-bottom: 2px solid var(--color-border-1);
-  border-radius: 15px;
+  border-top: var(--border-weight-1) solid var(--color-border-1);
+  border-right: var(--border-weight-1) solid var(--color-border-1);
+  border-bottom: var(--border-weight-1) solid var(--color-border-1);
+  border-radius: var(--border-radius-1);
   background-image: linear-gradient(to right, var(--color-background-3), var(--color-background-1));
   box-shadow: var(--box-shadow);
   width: 100%;
