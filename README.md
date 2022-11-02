@@ -117,7 +117,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - [Microverse](https://www.microverse.org/)
-- Coding Partners
 - Code Reviewers
 
 ## 📝 License
