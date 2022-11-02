@@ -9,7 +9,9 @@
       <div class="buttons">
         <%= render "users/all_posts_btn" %>
 
+        <% if current_user.id == @user.id %>
         <%= render "users/create_new_post" %>
+        <% end %>
       </div>
 
   </section>

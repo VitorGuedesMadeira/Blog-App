@@ -40,4 +40,7 @@
 
   /* shadow */
   --box-shadow: 10px 10px 10px #00000070;
+
+  /* right animation */
+  --animation-1: rightanimation 2s;
 }

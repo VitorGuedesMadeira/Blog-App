@@ -1,16 +1,15 @@
 .users-container {
   background-image: url(texture.png), linear-gradient(to right, var(--color-background-5), rgb(136, 131, 93));
   min-height: 100vh;
-  padding: 25px 5%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 15px 5%;
   gap: 35px;
+  overflow: hidden;
 }
 
 .single-user {
   display: flex;
-  animation: rightAnimation 2s;
 }
 
 .single-user-image {
@@ -25,6 +24,7 @@
 }
 
 .single-user-image img {
+  width: 150px;
   aspect-ratio: 1/1;
 }
 
@@ -41,6 +41,7 @@
   box-shadow: var(--box-shadow);
   gap: 50px;
   padding: 0 5%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;

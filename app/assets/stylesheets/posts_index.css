@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
-  animation: rightAnimation 2s;
 }
 
 .single-user-single-post-comments:hover {
