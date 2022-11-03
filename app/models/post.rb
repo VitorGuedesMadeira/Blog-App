@@ -1,7 +1,8 @@
 class Post < ApplicationRecord
   after_save :update_posts_counter
-  has_many :comments
-  has_many :likes
+  
+  has_many :comments, dependent: :destroy
+  has_many :likes, dependent: :destroy
   belongs_to :user
 
   validates :title, presence: true, length: { maximum: 250 }

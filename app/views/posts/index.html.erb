@@ -1,29 +1,43 @@
 <%= render "layouts/header" %>
 <main>
+  <%= render "users/single_user_info" %>
   <section class="single-user-container">
-    <%= render "users/single_user_info" %>
-
     <% @posts.each do |post| %>
-      <%= link_to user_post_path(@user, post), class: "link" do %>
+      <div>
         <div class="single-user-single-post">
+          <%= link_to user_post_path(@user, post), class: "link" do %>
+            <div>
+              <p>[Post <%= post.id %>]</p>
+              <h3><strong><%= post.title %></strong></h3>
+            </div>
+          <% end %>
+          <p>
+            <%= post.text %>
+          </p>
           <div>
-            <p>[Post <%= post.id %>]</p>
-            <h3><strong><%= post.title %></strong></h3>
+            <span>💬Comments: <%= post.comments_counter %></span>
+            <span>❤️Likes: <%= post.likes_counter %></span>
           </div>
-          <p><%= post.text %></p><br>
-          <span>💬Comments: <%= post.comments_counter %></span>
-          <span>❤️Likes: <%= post.likes_counter %></span>
+          <% if can? :destroy, post %>
+            <%= form_with model: post, url: user_post_path(@user, post), method: :delete do |form| %>
+              <%= form.submit "Delete", class: "delete-button" %>
+            <% end %>
+          <% end %>
         </div>
-
         <div class="single-user-single-post-comments">
           <% post.last_five_posts.each do |comment| %>
             <div class="single-user-single-post-single-comment">
               <p><strong><%= comment.user.name %>:</strong></p>
               <p><%= comment.text %></p>
             </div>
+            <% if can? :destroy, comment %>
+              <%= form_with model: comment, url: user_post_comment_path(@user, post, comment), method: :delete do |form| %>
+                <%= form.submit "Delete Comment", class: "delete-button" %>
+              <% end %>
+            <% end %>
           <% end %>
         </div>
-      <% end %>
+    </div>
     <% end %>
 
   </section>

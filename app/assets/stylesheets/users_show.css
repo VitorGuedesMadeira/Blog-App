@@ -1,5 +1,7 @@
 .single-user-container {
-  background-image: url(texture.png), linear-gradient(to right, var(--color-background-5), rgb(136, 131, 93));
+  background-image: url(texture.png), url('welcome');
+  background-size: 10%, cover;
+  background-attachment: fixed;
   min-height: calc(100vh - 76px);
   padding: 25px 150px;
   display: flex;
@@ -25,6 +27,9 @@
   padding: 25px;
   background-color: var(--color-background-1);
   box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .single-user-single-post:hover {

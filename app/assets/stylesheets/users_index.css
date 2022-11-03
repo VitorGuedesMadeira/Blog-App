@@ -1,5 +1,7 @@
 .users-container {
-  background-image: url(texture.png), linear-gradient(to right, var(--color-background-5), rgb(136, 131, 93));
+  background-image: url(texture.png), url('welcome');
+  background-size: 10%, cover;
+  background-attachment: fixed;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

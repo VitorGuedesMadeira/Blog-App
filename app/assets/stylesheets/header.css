@@ -13,7 +13,7 @@
 }
 
 .header-container {
-  background-image: linear-gradient(to right, #000322, var(--color-background-1));
+  background-image: linear-gradient(to right, #000d22, var(--color-background-1));
   display: flex;
   justify-content: space-between;
   padding: 25px 50px;
