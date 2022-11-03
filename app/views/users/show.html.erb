@@ -1,7 +1,7 @@
 <%= render "layouts/header" %>
 <main>
+  <%= render "users/single_user_info" %>
   <section class="single-user-container">
-      <%= render "users/single_user_info" %>
 
       <%= render "users/single_user_bio" %>
 
@@ -9,11 +9,7 @@
 
       <div class="buttons">
         <%= render "users/all_posts_btn" %>
-
-        <% if current_user.id == @user.id %>
         <%= render "users/create_new_post" %>
-        <% end %>
       </div>
-
   </section>
 </main>

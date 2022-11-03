@@ -1,7 +1,9 @@
 .single-post-container {
-  background-image: url(texture.png), linear-gradient(to right, var(--color-background-5), rgb(136, 131, 93));
-  min-height: calc(100vh - 76px);
-  padding: 25px 150px;
+  background-image: url(texture.png), url('welcome');
+  background-size: 10%, cover;
+  background-attachment: fixed;
+  min-height: calc(100vh - 55px);
+  padding: 25px 10%;
   display: flex;
   flex-direction: column;
 }
@@ -20,6 +22,7 @@
   display: flex;
   gap: 10px;
   border: var(--border-weight-1) solid var(--color-border-1);
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   background-color: var(--color-background-1);
   width: fit-content;
   padding: 5px;
@@ -29,6 +32,7 @@
 
 .create-comment-text {
   border: var(--border-weight-1) solid var(--color-border-1);
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   border-radius: var(--border-radius-1);
   display: flex;
   padding: 15px;
@@ -38,6 +42,7 @@
 
 .create-comment-button {
   border: var(--border-weight-1) solid var(--color-border-1);
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   border-radius: var(--border-radius-1);
   padding: 15px;
   font-weight: 900;
@@ -56,6 +61,7 @@
   right: 15px;
   bottom: 15px;
   border: var(--border-weight-1) solid var(--color-border-1);
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   border-radius: var(--border-radius-1);
   padding: 15px;
   font-weight: 900;

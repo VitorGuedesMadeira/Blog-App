@@ -1,10 +1,12 @@
 .users-container {
-  background-image: url(texture.png), linear-gradient(to right, var(--color-background-5), rgb(136, 131, 93));
-  min-height: 100vh;
+  background-image: url(texture.png), url('welcome');
+  background-size: 10%, cover;
+  background-attachment: fixed;
+  min-height: calc(100vh - 55px);
   display: flex;
   flex-direction: column;
-  padding: 15px 5%;
-  gap: 35px;
+  padding: 25px 10%;
+  gap: 10px;
   overflow: hidden;
 }
 
@@ -15,9 +17,10 @@
 .single-user-image {
   display: flex;
   align-items: center;
-  border-top: var(--border-weight-1) solid var(--color-border-1);
-  border-left: var(--border-weight-1) solid var(--color-border-1);
+  border-top: var(--border-weight-1) solid #acb8c5;
+  border-left: var(--border-weight-1) solid #acb8c5;
   border-bottom: var(--border-weight-1) solid var(--color-border-1);
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   border-radius: var(--border-radius-1);
   box-shadow: var(--box-shadow);
   background-image: linear-gradient(to right, var(--color-background-1), rgb(33, 27, 118));
@@ -33,11 +36,11 @@
 }
 
 .single-user-info {
-  border-top: var(--border-weight-1) solid var(--color-border-1);
-  border-right: var(--border-weight-1) solid var(--color-border-1);
+  border-top: var(--border-weight-1) solid #acb8c5;
+  border-right: var(--border-weight-1) solid #253e57c9;
   border-bottom: var(--border-weight-1) solid var(--color-border-1);
   border-radius: var(--border-radius-1);
-  background-image: linear-gradient(to right, var(--color-background-3), var(--color-background-1));
+  background-color: rgb(255, 255, 255, 0.6);
   box-shadow: var(--box-shadow);
   gap: 50px;
   padding: 0 5%;
@@ -45,11 +48,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #253e57c9;
 }
 
 .single-user-info h2 {
   font-size: 2em;
   text-decoration: none;
+  font-style: italic;
 }
 
 .single-user-info span {

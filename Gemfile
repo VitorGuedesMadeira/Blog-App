@@ -18,6 +18,9 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 # devise Authentication
 gem 'devise'
 
+# cancan
+gem 'cancancan'
+
 # Use for hiding credentials
 gem 'dotenv-rails'
 

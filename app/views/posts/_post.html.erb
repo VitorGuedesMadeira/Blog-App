@@ -1,13 +1,24 @@
 <% @user.last_three_posts.each do |post| %>
-  <%= link_to user_post_path(@user, post), class: "link" do %>
     <div class="single-user-single-post">
+      <%= link_to user_post_path(@user, post), class: "link" do %>
+        <div>
+          <p>[Post <%= post.id %>]</p>
+          <h3><strong><%= post.title %></strong></h3>
+        </div>
+      <% end %>
+
+      <p class="single-user-text">
+        <%= post.text %>
+      </p><br>
+
       <div>
-        <p>[Post <%= post.id %>]</p>
-        <h3><strong><%= post.title %></strong></h3>
+        <span>💬Comments: <%= post.comments_counter %></span>
+        <span>❤️Likes: <%= post.likes_counter %></span>
+        <% if can? :destroy, post %>
+        <%= form_with model: post, url: user_post_path(@user, post), method: :delete do |form| %>
+          <%= form.submit "Delete Post", class: "delete-button" %>
+        <% end %>
+      <% end %>
       </div>
-      <p><%= post.text %></p><br>
-      <span>💬Comments: <%= post.comments_counter %></span>
-      <span>❤️Likes: <%= post.likes_counter %></span>
     </div>
-  <% end %>
 <% end %>

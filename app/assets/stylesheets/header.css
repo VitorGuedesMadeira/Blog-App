@@ -9,16 +9,17 @@
 }
 
 .link {
-  color: black;
+  color: rgb(1, 22, 45, 0.7);
 }
 
 .header-container {
-  background-image: linear-gradient(to right, #000322, var(--color-background-1));
+  background-image: linear-gradient(to right, #001522, var(--color-background-1));
   display: flex;
   justify-content: space-between;
-  padding: 25px 50px;
+  padding: 15px 10%;
   box-shadow: var(--box-shadow);
   border-bottom: var(--border-weight-1) solid black;
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   font-weight: 900;
 }
 
