@@ -2,11 +2,11 @@
   background-image: url(texture.png), url('welcome');
   background-size: 10%, cover;
   background-attachment: fixed;
-  min-height: calc(100vh - 76px);
+  min-height: calc(100vh - 55px);
   padding: 25px 10%;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 10px;
 }
 
 .single-user-bio {
@@ -16,6 +16,11 @@
   padding: 25px;
   background-color: var(--color-background-3);
   box-shadow: var(--box-shadow);
+  color: #253e57c9;
+}
+
+.single-user-text {
+  overflow: hidden;
 }
 
 .single-user-bio:hover {
@@ -27,7 +32,8 @@
   border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   border-radius: var(--border-radius-1);
   padding: 25px;
-  background-color: var(--color-background-1);
+  background-color: rgb(255, 255, 255, 0.6);
+  backdrop-filter: blur(5px);
   box-shadow: var(--box-shadow);
   display: flex;
   flex-direction: column;
@@ -51,7 +57,7 @@
 
 .buttons {
   display: flex;
-  gap: 25px;
+  gap: 10px;
 }
 
 .see-all-posts-button {

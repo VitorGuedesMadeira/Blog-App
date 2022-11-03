@@ -16,15 +16,15 @@
 
 :root {
   /* colors */
-  --color-background-1: rgba(157, 186, 218, 0.8);
-  --color-background-2: #ebf3ff;
-  --color-background-3: #cddceb50;
+  --color-background-1: rgba(157, 206, 218, 0.8);
+  --color-background-2: #ebf7ff;
+  --color-background-3: #cde1eb50;
   --color-background-4: #ad9861;
   --color-background-5: #cbcdd4;
 
   /* hover colors */
-  --color-hover-1: #476d88;
-  --color-hover-2: #a7c2dc;
+  --color-hover-1: #477b88;
+  --color-hover-2: #a7ccdc;
   --color-hover-3: #88a6c1;
   --color-hover-4: #8e8162;
   --color-hover-5: #bdbab5;

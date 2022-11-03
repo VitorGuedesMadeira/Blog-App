@@ -2,7 +2,7 @@
   background-image: url(texture.png), url('welcome');
   background-size: 10%, cover;
   background-attachment: fixed;
-  min-height: calc(100vh - 76px);
+  min-height: calc(100vh - 55px);
   padding: 25px 10%;
   display: flex;
   flex-direction: column;

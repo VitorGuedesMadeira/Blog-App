@@ -5,7 +5,11 @@
         <img src="<%= user.photo %>">
       </div>
       <div class="single-user-info">
+      <% if current_user.id == user.id %>
+        <h2><%= user.name %>⭐</h2>
+        <% else %>
         <h2><%= user.name %></h2>
+        <% end %>
         <span>Posts: <%= user.posts_counter %></span>
       </div>
     </div>

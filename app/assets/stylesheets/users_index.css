@@ -2,11 +2,11 @@
   background-image: url(texture.png), url('welcome');
   background-size: 10%, cover;
   background-attachment: fixed;
-  min-height: calc(100vh - 78px);
+  min-height: calc(100vh - 55px);
   display: flex;
   flex-direction: column;
   padding: 25px 10%;
-  gap: 15px;
+  gap: 10px;
   overflow: hidden;
 }
 
@@ -40,7 +40,7 @@
   border-right: var(--border-weight-1) solid #253e57c9;
   border-bottom: var(--border-weight-1) solid var(--color-border-1);
   border-radius: var(--border-radius-1);
-  background-image: linear-gradient(to right, var(--color-background-3), var(--color-background-1));
+  background-color: rgb(255, 255, 255, 0.6);
   box-shadow: var(--box-shadow);
   gap: 50px;
   padding: 0 5%;
@@ -48,11 +48,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #253e57c9;
 }
 
 .single-user-info h2 {
   font-size: 2em;
   text-decoration: none;
+  font-style: italic;
 }
 
 .single-user-info span {
