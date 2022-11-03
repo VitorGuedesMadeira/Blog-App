@@ -3,7 +3,7 @@
   background-size: 10%, cover;
   background-attachment: fixed;
   min-height: calc(100vh - 76px);
-  padding: 25px 150px;
+  padding: 25px 10%;
   display: flex;
   flex-direction: column;
   gap: 35px;
@@ -11,6 +11,7 @@
 
 .single-user-bio {
   border: var(--border-weight-1) solid var(--color-border-1);
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   border-radius: var(--border-radius-1);
   padding: 25px;
   background-color: var(--color-background-3);
@@ -23,6 +24,7 @@
 
 .single-user-single-post {
   border: var(--border-weight-1) solid var(--color-border-1);
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   border-radius: var(--border-radius-1);
   padding: 25px;
   background-color: var(--color-background-1);
@@ -43,6 +45,7 @@
   font-weight: 900;
   box-shadow: var(--box-shadow);
   border: var(--border-weight-1) solid black;
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   font-size: 0.7em;
 }
 
@@ -53,18 +56,21 @@
 
 .see-all-posts-button {
   border: var(--border-weight-1) solid var(--color-border-1);
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   border-radius: var(--border-radius-1);
   padding: 15px;
   font-weight: 900;
   font-size: 1em;
   cursor: pointer;
   box-shadow: var(--box-shadow);
-  background-image: linear-gradient(to right, #000322, var(--color-background-1));
+  background-image: linear-gradient(to right, var(--color-background-2), var(--color-background-1));
   transition: 0.5s;
-  color: white;
+  color: #253e57c9;
+  width: 200px;
 }
 
 .see-all-posts-button:hover {
-  background-image: linear-gradient(to left, #000322, var(--color-hover-1));
+  background-image: linear-gradient(to right, var(--color-background-1), var(--color-background-3));
   transform: scale(1.02);
+  color: #10273ec9;
 }

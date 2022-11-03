@@ -1,5 +1,6 @@
 .delete-button {
-  background-color: red;
+  background-color: var(--color-background-4);
   border-radius: var(--border-radius-1);
-  padding: 10px;
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
+  padding: 3px;
 }

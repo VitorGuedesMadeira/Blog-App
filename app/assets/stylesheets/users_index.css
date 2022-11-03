@@ -2,11 +2,11 @@
   background-image: url(texture.png), url('welcome');
   background-size: 10%, cover;
   background-attachment: fixed;
-  min-height: 100vh;
+  min-height: calc(100vh - 78px);
   display: flex;
   flex-direction: column;
-  padding: 15px 5%;
-  gap: 35px;
+  padding: 25px 10%;
+  gap: 15px;
   overflow: hidden;
 }
 
@@ -17,9 +17,10 @@
 .single-user-image {
   display: flex;
   align-items: center;
-  border-top: var(--border-weight-1) solid var(--color-border-1);
-  border-left: var(--border-weight-1) solid var(--color-border-1);
+  border-top: var(--border-weight-1) solid #acb8c5;
+  border-left: var(--border-weight-1) solid #acb8c5;
   border-bottom: var(--border-weight-1) solid var(--color-border-1);
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   border-radius: var(--border-radius-1);
   box-shadow: var(--box-shadow);
   background-image: linear-gradient(to right, var(--color-background-1), rgb(33, 27, 118));
@@ -35,8 +36,8 @@
 }
 
 .single-user-info {
-  border-top: var(--border-weight-1) solid var(--color-border-1);
-  border-right: var(--border-weight-1) solid var(--color-border-1);
+  border-top: var(--border-weight-1) solid #acb8c5;
+  border-right: var(--border-weight-1) solid #253e57c9;
   border-bottom: var(--border-weight-1) solid var(--color-border-1);
   border-radius: var(--border-radius-1);
   background-image: linear-gradient(to right, var(--color-background-3), var(--color-background-1));

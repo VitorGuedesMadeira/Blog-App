@@ -18,16 +18,17 @@
     
     <div class="single-user-single-post-comments">
     <% @comments.includes([:user]).each do |comment| %>
-        <div class="single-user-single-post-single-comment">
-          <p><strong><%= comment.user.name %>:</strong></p>
-          <p><%= comment.text %></p>
-        </div>
-
-        <% if can? :destroy, comment %>
-          <%= form_with model: comment, url: user_post_comment_path(comment.user, @post, comment), method: :delete do |form| %>
-            <%= form.submit "Delete Comment", class: "delete-button" %>
+        <div class="comment-info-delete-button-div">
+          <div class="single-user-single-post-single-comment">
+            <p><strong><%= comment.user.name %>:</strong></p>
+            <p><%= comment.text %></p>
+          </div>
+          <% if can? :destroy, comment %>
+            <%= form_with model: comment, url: user_post_comment_path(comment.user, @post, comment), method: :delete do |form| %>
+              <%= form.submit "X", class: "delete-button" %>
+            <% end %>
           <% end %>
-        <% end %>
+        </div>
     <% end %>
     </div>
 

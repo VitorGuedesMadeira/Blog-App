@@ -19,6 +19,7 @@
   padding: 25px 50px;
   box-shadow: var(--box-shadow);
   border-bottom: var(--border-weight-1) solid black;
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   font-weight: 900;
 }
 
