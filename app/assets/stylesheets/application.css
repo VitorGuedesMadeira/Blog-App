@@ -16,11 +16,11 @@
 
 :root {
   /* colors */
-  --color-background-1: rgba(157, 206, 218, 0.8);
-  --color-background-2: #ebf7ff;
-  --color-background-3: #cde1eb50;
-  --color-background-4: #ad9861;
-  --color-background-5: #cbcdd4;
+  --color-background-1: rgba(231, 243, 246, 0.8);
+  --color-background-2: #f4fbff;
+  --color-background-3: #e2eef450;
+  --color-background-4: #e3d7ba;
+  --color-background-5: #e3e5eb;
 
   /* hover colors */
   --color-hover-1: #477b88;

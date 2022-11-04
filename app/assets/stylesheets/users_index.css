@@ -2,6 +2,8 @@
   background-image: url(texture.png), url('welcome');
   background-size: 10%, cover;
   background-attachment: fixed;
+  background-color: rgb(255, 255, 255, 0.6);
+  background-blend-mode: color;
   min-height: calc(100vh - 55px);
   display: flex;
   flex-direction: column;
