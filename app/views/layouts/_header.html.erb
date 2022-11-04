@@ -7,9 +7,7 @@
       <%= current_user.name.split(' ')[0] %>
     </li>
     <% end %>
-    <li class="nav-item">
-      <%= link_to("Log out", destroy_user_session_path, method: :delete, data: { turbo_method: :delete }) %>
-    </li>
+    <%= button_to "Logout", destroy_user_session_path, method: :delete, data: { turbo: false }, :class => 'nav-link' %>
     <li>
       <%= link_to root_path do %>
         Home
