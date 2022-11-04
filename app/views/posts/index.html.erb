@@ -2,7 +2,7 @@
 <main>
   <%= render "users/single_user_info" %>
   <section class="single-user-container">
-    <% @posts.each do |post| %>
+    <% @posts.includes([:comments, :likes]).each do |post| %>
       <div>
         <div class="single-user-single-post">
           <%= link_to user_post_path(@user, post), class: "link" do %>
