@@ -1,4 +1,4 @@
-<% @users_all.each do |user| %>
+<% @users_all.includes(:posts).each do |user| %>
   <%= link_to user_path(user), class: "link" do %>
     <div class="single-user">
       <div class="single-user-image">
@@ -10,7 +10,7 @@
         <% else %>
         <h2><%= user.name %></h2>
         <% end %>
-        <span>Posts: <%= user.posts_counter %></span>
+        <span>Posts: <%= user.posts.length %></span>
       </div>
     </div>
   <% end %>

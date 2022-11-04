@@ -29,9 +29,8 @@ class PostsController < ApplicationController
 
   def destroy
     @post = Post.find(params[:id]).destroy
-
     respond_to do |format|
-      format.html { redirect_to user_path(current_user), notice: 'Deleted!' }
+      format.html { redirect_back_or_to user_path(current_user), notice: 'Deleted!' }
     end
   end
 

@@ -120,6 +120,7 @@ GEM
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
     json (2.6.2)
+    jwt (2.5.0)
     launchy (2.5.0)
       addressable (~> 2.7)
     letter_opener (1.8.1)
@@ -277,6 +278,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   bootsnap
   bullet
   cancancan
@@ -287,6 +289,7 @@ DEPENDENCIES
   ffi
   importmap-rails
   jbuilder
+  jwt
   letter_opener
   pg (~> 1.1)
   puma (~> 5.0)
