@@ -17,11 +17,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10%;
   box-shadow: var(--box-shadow);
   border-bottom: var(--border-weight-1) solid black;
   border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   font-weight: 900;
+  padding-left: 10%;
 }
 
 .header-container span {
@@ -53,6 +53,8 @@
   padding: 15px;
   cursor: pointer;
   border-color: #8a98a8 #253e57c9 #253e57c9 #6d7c8d;
+  color: white;
+  border-radius: 5px;
 }
 
 .header-container ul li:hover {

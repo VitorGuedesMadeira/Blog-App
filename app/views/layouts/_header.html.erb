@@ -1,19 +1,19 @@
 <header class="header-container">
   <span>Application Blog</span>
   <ul>
-    <% if user_signed_in? %>
-    <li>
-      Hello
-      <%= current_user.name.split(' ')[0] %>
-    </li>
-    <% end %>
-    <li>
-    <%= button_to "Logout", destroy_user_session_path, method: :delete, data: { turbo: false }, :class => 'logout' %>
-    </li>
     <li>
       <%= link_to root_path do %>
         Home
       <% end %>
+    </li>
+    <li>
+      My posts
+    </li>
+    <li>
+      Settings
+    </li>
+    <li>
+    <%= button_to "Logout", destroy_user_session_path, method: :delete, data: { turbo: false }, :class => 'logout' %>
     </li>
   </ul>
 </header>
