@@ -14,7 +14,8 @@
 - [x] Linters: [Rubocop](https://rubocop.org/)
 - [x] Linters: [Stylent](https://stylelint.io/)
 - [x] Visual Studio Code (code editor)
-- [x] RSpec (testings) 
+- [x] RSpec (unit testings) 
+- [x] Capybara (integration testings)
 
 ## Getting Started
 
