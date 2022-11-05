@@ -5,11 +5,32 @@
 
       <%= render "users/single_user_bio" %>
 
-      <%= render "posts/post" %>
+      <div class="flex-row">
+        <div class="social-media">
+          <p>links</p>
+        </div>
+        <div>
+          <%= render "posts/post" %>
+        </div>
+        <div class="friends-list">
+          <h2>Friends List</h2>
+          <ul>
+            <li>friend 1</li>
+            <li>friend 2</li>
+            <li>friend 3</li>
+            <li>friend 4</li>
+            <li>friend 5</li>
+            <li>friend 6</li>
+            <li>friend 7</li>
+          </ul>
+        </div>
+      </div>
 
       <div class="buttons">
         <%= render "users/all_posts_btn" %>
+        <% if current_user.id == @user.id %>
         <%= render "users/create_new_post" %>
+        <% end %>
       </div>
   </section>
 </main>

@@ -2,8 +2,10 @@
   background-image: url(texture.png), url('welcome');
   background-size: 10%, cover;
   background-attachment: fixed;
+  background-color: rgb(255, 255, 255, 0.6);
+  background-blend-mode: color;
   min-height: calc(100vh - 55px);
-  padding: 25px 10%;
+  padding: 25px 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -79,4 +81,37 @@
   background-image: linear-gradient(to right, var(--color-background-1), var(--color-background-3));
   transform: scale(1.02);
   color: #10273ec9;
+}
+
+.flex-row {
+  display: flex;
+  gap: 10px;
+}
+
+.friends-list {
+  padding: 25px;
+  background-color: white;
+  border: var(--border-weight-1) solid var(--color-border-1);
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
+  border-radius: 5px;
+}
+
+.friends-list ul {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 25px;
+}
+
+.social-media {
+  padding: 25px;
+  background-color: white;
+  border: var(--border-weight-1) solid var(--color-border-1);
+  border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
+  border-radius: 5px;
+}
+
+.social-media p {
+  width: 200px;
 }

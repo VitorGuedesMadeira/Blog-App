@@ -16,11 +16,12 @@
   background-image: linear-gradient(to right, #001522, var(--color-background-1));
   display: flex;
   justify-content: space-between;
-  padding: 15px 10%;
+  align-items: center;
   box-shadow: var(--box-shadow);
   border-bottom: var(--border-weight-1) solid black;
   border-color: #acb8c5 #253e57c9 #253e57c9 #acb8c5;
   font-weight: 900;
+  padding-left: 10%;
 }
 
 .header-container span {
@@ -36,10 +37,35 @@
 .header-container ul {
   display: flex;
   list-style-type: none;
-  gap: 25px;
+  background-color: #253e5740;
 }
 
 .header-container ul a {
   text-decoration: none;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.header-container ul li {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 15px;
+  cursor: pointer;
+  border-color: #8a98a8 #253e57c9 #253e57c9 #6d7c8d;
+  color: white;
+  border-radius: 5px;
+}
+
+.header-container ul li:hover {
+  background-color: #253e5750;
+}
+
+.logout {
+  border: none;
+  background-color: transparent;
+  font-weight: 900;
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1.05em;
   color: white;
 }

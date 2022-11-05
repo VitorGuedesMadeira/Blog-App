@@ -12,8 +12,8 @@
       </p><br>
 
       <div>
-        <span>💬Comments: <%= post.comments_counter %></span>
-        <span>❤️Likes: <%= post.likes_counter %></span>
+        <span>💬Comments: <%= post.comments.length %></span>
+        <span>❤️Likes: <%= post.likes.length %></span>
         <% if can? :destroy, post %>
         <%= form_with model: post, url: user_post_path(@user, post), method: :delete do |form| %>
           <%= form.submit "Delete Post", class: "delete-button" %>

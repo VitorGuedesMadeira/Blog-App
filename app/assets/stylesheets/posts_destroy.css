@@ -5,4 +5,5 @@
   border-radius: var(--border-radius-1);
   border-color: #a5857d #572525c9 #572525c9 #a5857d;
   padding: 3px;
+  cursor: pointer;
 }
